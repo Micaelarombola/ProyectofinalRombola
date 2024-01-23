@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda preentrega</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- Enlace al archivo main.js -->
-    <script src="main.js" defer></script>
+    <title>Proyecto Estudiantes</title>
 </head>
-
 <body>
-    <h1>Mi Proyecto</h1>
+    <h1>Registro de Estudiantes</h1>
 
-    <form id="miFormulario">
+    <form id="formularioEstudiante">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" required>
 
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido">
+        <input type="text" id="apellido" required>
 
         <label for="materia">Materia:</label>
-        <input type="text" id="materia" name="materia">
+        <input type="text" id="materia" required>
 
-        <button type="button" onclick="evaluarPreEntrega()">Evaluar Pre-Entrega</button>
+        <button type="button" id="agregarEstudiante">Agregar Estudiante</button>
     </form>
 
-    <script src="script.js"></script>
+    <h2>Lista de Estudiantes</h2>
+    <ul id="listaEstudiantes"></ul>
+
+    <script src="main.js"></script>
 </body>
 </html>
